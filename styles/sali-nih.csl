@@ -3,8 +3,8 @@
   <info>
     <title>Sali Lab custom style for NIH proposals</title>
     <title-short>SaliNIH</title-short>
-    <id>http://salilab.org/zotero/styles/sali-nih</id>
-    <link href="http://salilab.org/zotero/styles/sali-nih.csl" rel="self"/>
+    <id>https://github.com/salilab/zotero/styles/sali-nih</id>
+    <link href="https://raw.githubusercontent.com/salilab/zotero/master/styles/sali-nih.csl" rel="self"/>
     <link href="http://www.nlm.nih.gov/pubs/formats/recommendedformats1991-full.pdf" rel="documentation"/>
     <link href="http://publicaccess.nih.gov/citation_methods.htm" rel="documentation"/>
     <link href="http://grants.nih.gov/grants/funding/424/SF424_RR_Guide_General_Adobe_VerC.pdf" rel="documentation"/>

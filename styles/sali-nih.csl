@@ -173,11 +173,9 @@
   <macro name="date">
     <choose>
       <if type="article-journal article-magazine article-newspaper" match="any">
-        <group suffix=";" delimiter=" ">
+        <group suffix="." delimiter=" ">
           <date variable="issued" delimiter=" ">
             <date-part name="year"/>
-            <date-part name="month" form="short" strip-periods="true"/>
-            <date-part name="day"/>
           </date>
           <text macro="accessed-date"/>
         </group>
@@ -233,10 +231,10 @@
   <macro name="pages">
     <choose>
       <if type="article-journal article-magazine article-newspaper" match="any">
-        <text variable="page" prefix=":"/>
+        <text variable="page"/>
       </if>
       <else>
-        <text variable="page" prefix=" p. "/>
+        <text variable="page" prefix="p. "/>
       </else>
     </choose>
   </macro>

@@ -284,7 +284,6 @@
         </group>
       </group>
       <text macro="report-details" suffix=". "/>
-      <text macro="access"/>
       <text macro="pmcid"/>
     </layout>
   </bibliography>

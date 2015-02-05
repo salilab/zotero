@@ -26,7 +26,7 @@
     <category citation-format="numeric"/>
     <category field="medicine"/>
     <summary>Based on the National Library of Medicine (grant proposals with PMCID/PMID) style, customized for the Sali lab for NIH grant proposals</summary>
-    <updated>2014-06-08T18:57:37+00:00</updated>
+    <updated>2015-02-04T17:03:00-08:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="en">
@@ -102,7 +102,7 @@
   <macro name="container-title">
     <choose>
       <if type="article-journal article-magazine chapter paper-conference article-newspaper" match="any">
-        <group suffix="." delimiter=" ">
+        <group suffix="" delimiter=" ">
           <text variable="container-title" form="short" strip-periods="true"/>
           <choose>
             <if variable="URL">
@@ -246,7 +246,7 @@
   <macro name="journal-location">
     <choose>
       <if type="article-journal article-magazine" match="any">
-        <text variable="volume"/>
+        <text variable="volume" font-weight="bold"/>
         <text variable="issue" prefix="(" suffix=")"/>
       </if>
     </choose>
@@ -277,10 +277,10 @@
         <text macro="editor"/>
         <text macro="container-title"/>
         <text macro="publisher"/>
-        <group>
-          <text macro="date"/>
+        <group delimiter=", ">
           <text macro="journal-location"/>
           <text macro="pages"/>
+          <text macro="date"/>
         </group>
       </group>
       <text macro="report-details" suffix=". "/>
